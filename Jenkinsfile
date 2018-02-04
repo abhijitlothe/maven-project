@@ -30,9 +30,9 @@ pipeline {
                 }
                 build job: 'testapp-deploy-to-prod'
             }
-            post {
-                success{
-                    echo ' Deployed build to production. '
+        post {
+                success {
+                    echo 'Code deployed to Production.'
                 }
 
                 failure {
