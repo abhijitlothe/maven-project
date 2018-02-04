@@ -29,7 +29,7 @@ pipeline {
             }
             post {
                 success{
-                    echo ' Deployed build to production.'
+                    echo ' Deployed build to production. '
                 }
 
                 failure {
