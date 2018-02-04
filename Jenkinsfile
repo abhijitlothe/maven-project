@@ -22,7 +22,7 @@ pipeline {
 
         stage ('Deploy-to-production'){
             steps{
-                timeout(time: 5, units: 'DAYS'){
+                timeout(time: 5, unit: 'DAYS'){
                     input message: 'Approve PRODUCTION deployment?'
                 }
                 build job: 'testapp-deploy-to-prod'
